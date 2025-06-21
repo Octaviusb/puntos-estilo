@@ -1,0 +1,93 @@
+# 🎬 Automatización FFmpeg - Puntos Estilo
+
+## Script para procesar videos automáticamente
+
+### 1. Procesar video demo del sistema
+ffmpeg -i demo_system_raw.mp4 -c:v libx264 -crf 20 -preset medium -c:a aac -b:a 128k -movflags +faststart demo_system_final.mp4
+
+### 2. Procesar video promocional
+ffmpeg -i promotional_raw.mp4 -c:v libx264 -crf 22 -preset fast -c:a aac -b:a 96k -movflags +faststart promotional_final.mp4
+
+### 3. Procesar video tutorial
+ffmpeg -i tutorial_raw.mp4 -c:v libx264 -crf 23 -preset medium -c:a aac -b:a 128k -movflags +faststart tutorial_final.mp4
+
+### 4. Crear versiones para diferentes plataformas
+
+#### YouTube
+ffmpeg -i demo_system_final.mp4 -c:v libx264 -crf 18 -preset slow -c:a aac -b:a 192k youtube_demo.mp4
+
+#### Instagram
+ffmpeg -i promotional_final.mp4 -vf "scale=1080:1080:force_original_aspect_ratio=decrease,pad=1080:1080:(ow-iw)/2:(oh-ih)/2" instagram_promo.mp4
+
+#### LinkedIn
+ffmpeg -i demo_system_final.mp4 -c:v libx264 -crf 23 -preset medium linkedin_demo.mp4
+
+#### Web
+ffmpeg -i tutorial_final.mp4 -vf scale=1280:720 -c:v libx264 -crf 25 -preset fast web_tutorial.mp4
+
+### 5. Crear miniaturas
+ffmpeg -i demo_system_final.mp4 -ss 00:00:05 -vframes 1 -vf scale=1280:720 thumbnail_demo.jpg
+ffmpeg -i promotional_final.mp4 -ss 00:00:02 -vframes 1 -vf scale=1280:720 thumbnail_promo.jpg
+ffmpeg -i tutorial_final.mp4 -ss 00:00:10 -vframes 1 -vf scale=1280:720 thumbnail_tutorial.jpg
+
+### 6. Crear GIFs para redes sociales
+ffmpeg -i promotional_final.mp4 -vf "fps=15,scale=480:-1" -loop 0 promo.gif
+ffmpeg -i demo_system_final.mp4 -ss 00:01:00 -t 00:00:10 -vf "fps=10,scale=480:-1" -loop 0 demo_preview.gif
+
+### 7. Agregar marca de agua
+ffmpeg -i demo_system_final.mp4 -i logo.png -filter_complex "overlay=10:10" demo_with_logo.mp4
+
+### 8. Crear versión con subtítulos
+ffmpeg -i demo_system_final.mp4 -vf subtitles=demo_subs.srt demo_with_subs.mp4
+
+### 9. Optimizar para móvil
+ffmpeg -i demo_system_final.mp4 -vf scale=720:1280 -c:v libx264 -crf 28 -preset fast mobile_demo.mp4
+
+### 10. Crear versión para email
+ffmpeg -i promotional_final.mp4 -vf scale=640:360 -c:v libx264 -crf 28 -preset fast email_promo.mp4
+
+### 11. Crear versión para TikTok
+ffmpeg -i promotional_final.mp4 -vf "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2" tiktok_promo.mp4
+
+### 12. Crear versión para Facebook
+ffmpeg -i demo_system_final.mp4 -c:v libx264 -crf 23 -preset medium -c:a aac -b:a 128k -movflags +faststart facebook_demo.mp4
+
+### 13. Crear versión para Twitter
+ffmpeg -i promotional_final.mp4 -vf scale=1280:720 -c:v libx264 -crf 25 -preset fast -c:a aac -b:a 96k twitter_promo.mp4
+
+### 14. Agregar fade in/out
+ffmpeg -i demo_system_final.mp4 -vf "fade=t=in:st=0:d=2,fade=t=out:st=8:d=2" demo_with_fade.mp4
+
+### 15. Crear versión para presentaciones
+ffmpeg -i demo_system_final.mp4 -vf scale=1920:1080 -c:v libx264 -crf 20 -preset slow presentation_demo.mp4
+
+### 16. Optimizar para streaming
+ffmpeg -i demo_system_final.mp4 -c:v libx264 -crf 23 -preset medium -c:a aac -b:a 128k -g 30 -keyint_min 30 streaming_demo.mp4
+
+### 17. Crear versión para WhatsApp
+ffmpeg -i promotional_final.mp4 -vf scale=480:640 -c:v libx264 -crf 28 -preset fast -c:a aac -b:a 64k whatsapp_promo.mp4
+
+### 18. Agregar texto sobre video
+ffmpeg -i demo_system_final.mp4 -vf "drawtext=text='Puntos Estilo':fontcolor=white:fontsize=24:x=10:y=10" demo_with_text.mp4
+
+### 19. Crear versión para LinkedIn Stories
+ffmpeg -i promotional_final.mp4 -vf "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2" linkedin_stories.mp4
+
+### 20. Optimizar para Instagram Reels
+ffmpeg -i promotional_final.mp4 -vf "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2" instagram_reels.mp4
+
+### 21. Crear versión para YouTube Shorts
+ffmpeg -i demo_system_final.mp4 -vf "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2" youtube_shorts.mp4
+
+## Instrucciones de uso:
+1. Reemplaza "input.mp4" con el nombre de tu archivo
+2. Ajusta los parámetros según tus necesidades
+3. Ejecuta en terminal/cmd
+4. Verifica la calidad del resultado
+
+## Formatos recomendados:
+- YouTube: 1920x1080, CRF 18-23
+- Instagram: 1080x1080 o 1080x1920
+- LinkedIn: 1920x1080, CRF 23
+- Web: 1280x720, CRF 25
+- Móvil: 720x1280, CRF 28 

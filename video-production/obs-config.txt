@@ -1,0 +1,47 @@
+# Configuración OBS Studio para Puntos Estilo
+
+## Configuración de Video:
+- Resolución: 1920x1080
+- FPS: 30
+- Formato: MP4
+- Codec: H.264
+
+## Configuración de Audio:
+- Sample Rate: 44.1kHz
+- Channels: Stereo
+- Bitrate: 128kbps
+
+## Escenas a crear:
+1. Intro - Logo animado
+2. Demo Sistema - Pantalla completa
+3. Tutorial - Ventana específica
+4. Outro - Información de contacto
+
+## Fuentes de audio:
+- Micrófono (narración)
+- Sistema (música de fondo)
+- Archivo de audio (música)
+
+## Filtros recomendados:
+- Noise Suppression
+- Noise Gate
+- Compressor
+- Gain
+
+## Configuración de grabación:
+- Modo: Standard
+- Calidad: Indistinguishable
+- Formato: MP4
+- Codec: H.264
+- Rate Control: CBR
+- Bitrate: 8000 Kbps
+- Keyframe Interval: 2
+- CPU Usage Preset: veryfast
+- Profile: high
+- Tune: zerolatency
+
+## Configuración de audio:
+- Sample Rate: 44.1kHz
+- Channels: Stereo
+- Codec: AAC
+- Bitrate: 128 Kbps 
