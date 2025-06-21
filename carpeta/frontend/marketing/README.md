@@ -3,7 +3,7 @@
 ## 📱 **Presentación del Proyecto**
 
 ### **Descripción Ejecutiva**
-**Puntos Estilo** es un sistema integral de fidelización que permite a las empresas crear programas de recompensas personalizados. Los clientes acumulan puntos en cada compra y los canjean por beneficios exclusivos, generando mayor lealtad y engagement.
+**Puntos xxxxxx** es un sistema integral de fidelización que permite a las empresas crear programas de recompensas personalizados. Los clientes acumulan puntos en cada compra y los canjean por beneficios exclusivos, generando mayor lealtad y engagement.
 
 ### **Características Principales**
 - ✅ **Sistema de puntos flexible** y personalizable
