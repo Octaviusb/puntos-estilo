@@ -26,13 +26,25 @@ $canjes = $stmt->get_result();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Canjes - Puntos Estilo</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=3">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+    .no-exchanges {
+        text-align: center;
+    }
+    .no-exchanges .btn {
+        color: #fff !important;
+        background: #3498db;
+        margin: 1.5rem auto 0 auto;
+        display: inline-block;
+    }
+    </style>
 </head>
 <body>
     <?php include 'includes/nav.php'; ?>
     
     <main class="dashboard-container">
+        <a href="perfil.php" class="btn btn-secondary" style="margin-bottom: 1.5rem; display: inline-block;">‹ Volver al Perfil</a>
         <h2>Mis Canjes</h2>
         
         <div class="exchanges-container">
@@ -91,149 +103,13 @@ $canjes = $stmt->get_result();
             <?php else: ?>
                 <div class="no-exchanges">
                     <p>Aún no has realizado ningún canje.</p>
-                    <a href="catalogo.php" class="btn">Ver Catálogo</a>
+                    <button onclick="window.location.href='catalogo.php'" class="btn btn-primary">Ver Catálogo</button>
                 </div>
             <?php endif; ?>
         </div>
     </main>
 
     <?php include 'includes/footer.php'; ?>
-
-    <style>
-    .exchanges-container {
-        background: white;
-        border-radius: 8px;
-        padding: 2rem;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    
-    .exchanges-list {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    
-    .exchange-card {
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        padding: 1.5rem;
-        transition: all 0.3s ease;
-    }
-    
-    .exchange-card:hover {
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    
-    .exchange-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 1rem;
-    }
-    
-    .exchange-info h3 {
-        margin: 0 0 0.5rem 0;
-        color: var(--primary-color);
-    }
-    
-    .exchange-date,
-    .exchange-id {
-        margin: 0.25rem 0;
-        color: #666;
-        font-size: 0.9rem;
-    }
-    
-    .status-badge {
-        padding: 0.25rem 0.5rem;
-        border-radius: 4px;
-        font-size: 0.8rem;
-        font-weight: bold;
-    }
-    
-    .status-badge.confirmado {
-        background-color: #27ae60;
-        color: white;
-    }
-    
-    .status-badge.pendiente {
-        background-color: #f39c12;
-        color: white;
-    }
-    
-    .status-badge.cancelado {
-        background-color: #e74c3c;
-        color: white;
-    }
-    
-    .exchange-details {
-        display: flex;
-        gap: 1.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    .product-image img {
-        width: 80px;
-        height: 80px;
-        object-fit: cover;
-        border-radius: 4px;
-    }
-    
-    .exchange-summary {
-        flex: 1;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 0.5rem;
-    }
-    
-    .summary-item {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.5rem;
-        background: var(--light-gray);
-        border-radius: 4px;
-    }
-    
-    .summary-item .label {
-        font-weight: bold;
-        color: var(--primary-color);
-    }
-    
-    .summary-item .value {
-        color: var(--secondary-color);
-    }
-    
-    .exchange-actions {
-        display: flex;
-        gap: 0.5rem;
-        justify-content: flex-end;
-    }
-    
-    .btn-small {
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        background-color: var(--secondary-color);
-        color: white;
-        text-decoration: none;
-        display: inline-block;
-    }
-    
-    .btn-small:hover {
-        opacity: 0.8;
-    }
-    
-    .no-exchanges {
-        text-align: center;
-        padding: 3rem;
-        color: #666;
-    }
-    
-    .no-exchanges .btn {
-        margin-top: 1rem;
-    }
-    </style>
 
     <script>
     function printTicket(ticketId) {

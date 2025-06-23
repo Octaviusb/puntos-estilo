@@ -108,8 +108,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - Puntos Estilo</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Catálogo de Productos - Puntos Estilo</title>
+    <link rel="stylesheet" href="css/styles.css?v=3">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -153,7 +153,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                 <?php while ($producto = $productos->fetch_assoc()): ?>
                     <div class="product-card" data-puntos="<?php echo $producto['puntos']; ?>" data-nombre="<?php echo strtolower($producto['nombre']); ?>">
                         <div class="product-image">
-                            <img src="<?php echo htmlspecialchars($producto['imagen'] ?: 'img/default-product.jpg'); ?>" 
+                            <img src="<?php echo htmlspecialchars($producto['imagen']); ?>" 
                                  alt="<?php echo htmlspecialchars($producto['nombre']); ?>">
                             <?php if ($producto['destacado']): ?>
                                 <span class="featured-badge">Destacado</span>

@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 
                 // Redirigir según el rol
                 if (isset($user['rol']) && $user['rol'] === 'admin') {
-                    header('Location: administracion.php');
+                    header('Location: dashboard.php');
                 } else {
                     header('Location: perfil.php');
                 }
@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <span class="mode-badge">Modo Simple</span>
             </div>
             <?php if ($error): ?>
-                <div class="error-message"><?php echo htmlspecialchars($error); ?></div>
+                <div class="error-message show"><?php echo htmlspecialchars($error); ?></div>
             <?php endif; ?>
             <form method="POST" class="login-form">
                 <div class="input-group">
@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </form>
             <div class="links">
                 <a href="registro.php">¿No tienes cuenta? Regístrate</a>
-                <a href="login.php">Login con OTP (Próximamente)</a>
+                <a href="login.php">Login con OTP</a>
             </div>
         </div>
     </div>
@@ -116,15 +116,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         margin-bottom: 1.5rem;
     }
     .mode-badge {
-        background: var(--warning-color);
-        color: var(--white);
+        background: #ffc107;
+        color: #000;
         padding: 0.5rem 1rem;
         border-radius: 20px;
         font-size: 0.8rem;
         font-weight: bold;
     }
     .subtitle {
-        color: var(--text-muted);
+        color: #666;
         margin-bottom: 1rem;
         font-size: 1rem;
     }

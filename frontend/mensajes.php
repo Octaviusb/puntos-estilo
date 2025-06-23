@@ -68,6 +68,7 @@ while ($stat = $statsResult->fetch_assoc()) {
     <?php include 'includes/nav.php'; ?>
     
     <main class="dashboard-container">
+        <a href="administracion.php" class="btn btn-secondary" style="margin-bottom: 1.5rem; display: inline-block;">‹ Volver a Administración</a>
         <h2>Gestión de Mensajes</h2>
         
         <!-- Estadísticas -->
@@ -145,14 +146,7 @@ while ($stat = $statsResult->fetch_assoc()) {
         </div>
     </main>
 
-    <footer>
-        <h2>Información de Contacto</h2>
-        <ul>
-            <li>Dirección: Calle Falsa 123</li>
-            <li>Teléfono: 555-555-555</li>
-            <li>Email: contacto@example.com</li>
-        </ul>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
     <style>
     .stats-grid {

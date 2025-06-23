@@ -14,7 +14,7 @@ $error = '';
 
 // Procesar actualización de datos
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nombre = filter_input(INPUT_POST, 'nombre', FILTER_SANITIZE_STRING);
+    $nombre = htmlspecialchars(trim($_POST['nombre'] ?? ''), ENT_QUOTES, 'UTF-8');
     $correo = filter_input(INPUT_POST, 'correo', FILTER_SANITIZE_EMAIL);
     $nuevaContraseña = $_POST['nueva_contraseña'] ?? '';
     $confirmarContraseña = $_POST['confirmar_contraseña'] ?? '';
@@ -81,7 +81,8 @@ $user = $result->fetch_assoc();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Datos - Puntos Estilo</title>
+    <title>Mis Datos Personales - Puntos Estilo</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/perfil.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
@@ -173,7 +174,7 @@ $user = $result->fetch_assoc();
                 </div>
                 
                 <div class="form-actions">
-                    <button type="submit" class="btn">Guardar Cambios</button>
+                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
                     <a href="perfil.php" class="btn btn-secondary">Cancelar</a>
                 </div>
             </form>
@@ -186,32 +187,25 @@ $user = $result->fetch_assoc();
                 <div class="option-card">
                     <h4>Descargar Mis Datos</h4>
                     <p>Obtén una copia de todos tus datos personales.</p>
-                    <button class="btn btn-small" onclick="downloadData()">Descargar</button>
+                    <button class="btn btn-secondary btn-small" onclick="downloadData()">Descargar</button>
                 </div>
                 
                 <div class="option-card">
                     <h4>Historial de Actividad</h4>
                     <p>Revisa tu historial de transacciones y actividades.</p>
-                    <a href="mis-consumos.php" class="btn btn-small">Ver Historial</a>
+                    <a href="mis-consumos.php" class="btn btn-secondary btn-small">Ver Historial</a>
                 </div>
                 
                 <div class="option-card">
                     <h4>Configuración de Privacidad</h4>
                     <p>Gestiona tus preferencias de privacidad.</p>
-                    <button class="btn btn-small" onclick="privacySettings()">Configurar</button>
+                    <button class="btn btn-secondary btn-small" onclick="privacySettings()">Configurar</button>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <h2>Información de Contacto</h2>
-        <ul>
-            <li>Dirección: Calle Falsa 123</li>
-            <li>Teléfono: 555-555-555</li>
-            <li>Email: contacto@example.com</li>
-        </ul>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
     <script>
     function downloadData() {
@@ -418,6 +412,14 @@ $user = $result->fetch_assoc();
         .options-grid {
             grid-template-columns: 1fr;
         }
+    }
+    
+    .btn-secondary, .btn-small {
+        color: #fff !important;
+    }
+    .btn-secondary.btn-small:hover {
+        background: #7a8a94 !important;
+        color: #fff !important;
     }
     </style>
 </body>

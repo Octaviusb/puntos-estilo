@@ -10,7 +10,7 @@ if (!isset($_SESSION['user'])) {
     <div class="user-info">
         <span>Usuario: <?php echo htmlspecialchars($_SESSION['user']['nombre']); ?></span>
         <span class="user-points"><?php echo number_format($_SESSION['user']['puntos'] ?? 0); ?> pts</span>
-        <a href="logout.php">Cerrar Sesión</a>
+        <a href="logout.php" class="btn btn-primary" style="margin-left: 1rem;">Cerrar Sesión</a>
     </div>
 </header>
 

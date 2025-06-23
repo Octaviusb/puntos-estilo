@@ -163,6 +163,7 @@ $stats['puntos_totales'] = $result->fetch_assoc()['total'] ?? 0;
     <?php include 'includes/nav.php'; ?>
     
     <main class="dashboard-container">
+        <a href="administracion.php" class="btn btn-secondary" style="margin-bottom: 1.5rem; display: inline-block;">‹ Volver a Administración</a>
         <h2>Generar Reportes</h2>
         
         <!-- Estadísticas generales -->

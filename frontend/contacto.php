@@ -30,10 +30,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Puntos Estilo</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=3">
+    <link rel="stylesheet" href="css/contacto.css?v=3">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -146,6 +147,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         background: #d4edda;
         color: #155724;
         border-color: #28a745;
+    }
+    
+    .btn-secondary {
+        color: #222 !important;
+    }
+    button.btn, .btn {
+        color: #fff !important;
+        background: var(--primary-color) !important;
+    }
+    header h1 {
+        color: var(--primary-color) !important;
     }
     </style>
 </body>

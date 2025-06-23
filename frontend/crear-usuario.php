@@ -66,6 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php include 'includes/nav.php'; ?>
     
     <main class="dashboard-container">
+        <a href="gestion-usuarios.php" class="btn btn-secondary" style="margin-bottom: 1.5rem; display: inline-block;">‹ Volver a Gestión de Usuarios</a>
         <h2>Crear Nuevo Usuario</h2>
         
         <div class="form-container">
@@ -118,14 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </main>
 
-    <footer>
-        <h2>Información de Contacto</h2>
-        <ul>
-            <li>Dirección: Calle Falsa 123</li>
-            <li>Teléfono: 555-555-555</li>
-            <li>Email: contacto@example.com</li>
-        </ul>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
     <style>
     .form-container {
@@ -200,6 +194,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     .btn-secondary {
         background-color: #95a5a6;
+        color: #222 !important;
     }
     </style>
 </body>

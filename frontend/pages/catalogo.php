@@ -21,7 +21,9 @@ if ($_SESSION['user']['rol'] !== 'admin') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>
+    <title>Catálogo - Puntos Estilo</title>
+    <link rel="stylesheet" href="../css/styles.css?v=3">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <h1>Catálogo</h1>

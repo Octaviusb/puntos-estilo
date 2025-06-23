@@ -24,7 +24,7 @@ $user = $result->fetch_assoc();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Puntos Estilo</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=3">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -100,50 +100,6 @@ $user = $result->fetch_assoc();
     </main>
 
     <?php include 'includes/footer.php'; ?>
-
-    <style>
-    .welcome {
-        color: var(--secondary-color);
-        font-size: 1.1rem;
-        margin-top: 1rem;
-    }
     
-    .transaction {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.5rem 0;
-        border-bottom: 1px solid var(--border-color);
-    }
-    
-    .transaction:last-child {
-        border-bottom: none;
-    }
-    
-    .transaction .type {
-        text-transform: capitalize;
-        color: var(--secondary-color);
-        font-weight: bold;
-    }
-    
-    .product {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        padding: 0.5rem 0;
-        border-bottom: 1px solid var(--border-color);
-    }
-    
-    .product:last-child {
-        border-bottom: none;
-    }
-    
-    .product img {
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        border-radius: 4px;
-    }
-    </style>
 </body>
 </html> 

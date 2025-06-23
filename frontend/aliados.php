@@ -63,6 +63,7 @@ $categorias = $conn->query($sqlCategorias);
     <?php include 'includes/nav.php'; ?>
     
     <main class="dashboard-container">
+        <a href="perfil.php" class="btn btn-secondary" style="margin-bottom: 1.5rem; display: inline-block;">‹ Volver al Perfil</a>
         <h2>Nuestros Aliados</h2>
         
         <div class="intro-section">

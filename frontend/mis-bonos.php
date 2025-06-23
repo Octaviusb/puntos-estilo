@@ -43,6 +43,7 @@ $stats = $stmtStats->get_result()->fetch_assoc();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Bonos - Puntos Estilo</title>
+    <link rel="stylesheet" href="css/styles.css?v=3">
     <link rel="stylesheet" href="css/perfil.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>

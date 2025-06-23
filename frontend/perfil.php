@@ -48,7 +48,7 @@ $beneficios = $conn->query("SELECT * FROM productos WHERE destacado = 1 LIMIT 4"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Perfil - Puntos Estilo</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=3">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -109,7 +109,7 @@ $beneficios = $conn->query("SELECT * FROM productos WHERE destacado = 1 LIMIT 4"
                 <a href="mis-bonos.php" class="btn btn-secondary">Mis Bonos</a>
                 <a href="mis-referidos.php" class="btn btn-success">Mis Referidos</a>
                 <a href="retos.php" class="btn btn-warning">Retos</a>
-                <a href="pages/catalogo.php" class="btn btn-primary">Catálogo</a>
+                <a href="catalogo.php" class="btn btn-primary">Catálogo</a>
                 <a href="aliados.php" class="btn btn-secondary">Aliados</a>
                 <a href="mis_datos.php" class="btn btn-success">Mis Datos</a>
             </div>
@@ -117,7 +117,7 @@ $beneficios = $conn->query("SELECT * FROM productos WHERE destacado = 1 LIMIT 4"
 
         <!-- Beneficios destacados -->
         <div class="dashboard-card">
-            <h3>Beneficios Destacados <a href="pages/catalogo.php" class="btn btn-small">Ver todos</a></h3>
+            <h3>Beneficios Destacados <a href="catalogo.php" class="btn btn-small">Ver todos</a></h3>
             <div class="products-grid">
                 <?php while($b = $beneficios->fetch_assoc()): ?>
                 <div class="product-card">

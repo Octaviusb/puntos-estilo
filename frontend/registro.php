@@ -117,11 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Puntos Estilo. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
     <script>
         // Validación en tiempo real

@@ -131,6 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['csv_file'])) {
     <?php include 'includes/nav.php'; ?>
     
     <main class="dashboard-container">
+        <a href="administracion.php" class="btn btn-secondary" style="margin-bottom: 1.5rem; display: inline-block;">‹ Volver a Administración</a>
         <h2>Cargar Puntos por CSV</h2>
         
         <div class="csv-container">
@@ -222,14 +223,7 @@ usuario3@ejemplo.com,500</pre>
         </div>
     </main>
 
-    <footer>
-        <h2>Información de Contacto</h2>
-        <ul>
-            <li>Dirección: Calle Falsa 123</li>
-            <li>Teléfono: 555-555-555</li>
-            <li>Email: contacto@example.com</li>
-        </ul>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
     <style>
     .csv-container {
@@ -367,6 +361,10 @@ usuario3@ejemplo.com,500</pre>
         border-radius: 4px;
         margin-bottom: 1rem;
         border: 1px solid #f5c6cb;
+    }
+    
+    .btn-secondary {
+        color: #222 !important;
     }
     </style>
 </body>

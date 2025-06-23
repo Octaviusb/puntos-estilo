@@ -83,13 +83,14 @@ $stats = $conn->query($sqlStats)->fetch_assoc();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Canjes - Puntos Estilo</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=3">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <?php include 'includes/nav.php'; ?>
     
     <main class="dashboard-container">
+        <a href="administracion.php" class="btn btn-secondary" style="margin-bottom: 1.5rem; display: inline-block;">‹ Volver a Administración</a>
         <h2>Gestión de Canjes</h2>
         
         <?php if ($message): ?>
@@ -423,6 +424,10 @@ $stats = $conn->query($sqlStats)->fetch_assoc();
         border-radius: 4px;
         margin-bottom: 1rem;
         border: 1px solid #f5c6cb;
+    }
+    
+    .btn-secondary {
+        color: #222 !important;
     }
     </style>
 

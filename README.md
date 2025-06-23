@@ -1,224 +1,178 @@
-# 🎯 Puntos Estilo - Sistema de Fidelización
+# 🎯 Materiales de Marketing - Puntos Estilo
 
-[![PHP](https://img.shields.io/badge/PHP-8.1+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
-[![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+## 📱 **Presentación del Proyecto**
 
-## 📋 Descripción
+### **Descripción Ejecutiva**
+**Puntos Estilo** es un sistema integral de fidelización que permite a las empresas crear programas de recompensas personalizados. Los clientes acumulan puntos en cada compra y los canjean por beneficios exclusivos, generando mayor lealtad y engagement.
 
-**Puntos Estilo** es un sistema completo de fidelización desarrollado en PHP que permite a las empresas gestionar programas de lealtad de manera eficiente y moderna. El sistema incluye un panel administrativo intuitivo, autenticación segura, catálogo de beneficios dinámico y reportes avanzados.
+### **Características Principales**
+- ✅ **Sistema de puntos flexible** y personalizable
+- ✅ **Catálogo de beneficios** dinámico
+- ✅ **Panel administrativo** completo
+- ✅ **Autenticación segura** con OTP
+- ✅ **Diseño responsive** para todos los dispositivos
+- ✅ **Reportes y analytics** en tiempo real
 
-## ✨ Características Principales
+## 🎨 **Materiales Visuales**
 
-### 🔐 **Sistema de Autenticación**
-- Login con email y contraseña
-- Autenticación de dos factores (OTP)
-- Registro de usuarios
-- Recuperación de contraseña
-- Control de sesiones
-- Roles de usuario (admin/usuario)
+### **1. Logo y Branding**
+- `logo.png` - Logo principal de Puntos Estilo
+- `favicon.ico` - Icono para navegadores
+- `brand-guidelines.pdf` - Guía de marca
 
-### 👤 **Panel de Usuario**
-- Perfil personalizable con avatar
-- Visualización de puntos acumulados
-- Historial de transacciones
-- Mis consumos y bonos
-- Sistema de referidos
-- Retos y desafíos
+### **2. Screenshots del Sistema**
+- `dashboard-admin.png` - Panel administrativo
+- `perfil-usuario.png` - Perfil de usuario
+- `catalogo-beneficios.png` - Catálogo de productos
+- `mobile-responsive.png` - Vista móvil
 
-### ⚙️ **Panel Administrativo**
-- Gestión de usuarios
-- Gestión de productos/beneficios
-- Gestión de canjes
-- Reportes y analytics
-- Carga masiva de puntos (CSV)
-- Configuración del sistema
+### **3. Videos Promocionales**
+- `demo-sistema.mp4` - Demostración completa del sistema
+- `tutorial-admin.mp4` - Tutorial para administradores
+- `tutorial-usuario.mp4` - Tutorial para usuarios finales
 
-### 🎁 **Sistema de Puntos**
-- Acumulación automática
-- Redención de beneficios
-- Catálogo dinámico
-- Control de stock
-- Sistema de tickets
-- Vencimiento de puntos
+## 📊 **Presentaciones**
 
-## 🚀 Instalación
+### **1. Presentación para Inversores**
+- `pitch-deck.pdf` - Presentación ejecutiva
+- `business-plan.pdf` - Plan de negocio detallado
+- `financial-projections.xlsx` - Proyecciones financieras
 
-### Requisitos Previos
-- PHP 8.1 o superior
-- MySQL 5.7 o superior
-- Servidor web (Apache/Nginx)
-- Composer (opcional)
+### **2. Presentación Técnica**
+- `technical-overview.pdf` - Descripción técnica
+- `architecture-diagram.png` - Diagrama de arquitectura
+- `security-features.pdf` - Características de seguridad
 
-### Pasos de Instalación
+### **3. Presentación para Clientes**
+- `client-presentation.pdf` - Presentación comercial
+- `benefits-overview.pdf` - Beneficios del sistema
+- `pricing-tiers.pdf` - Planes y precios
 
-1. **Clonar el repositorio**
-   ```bash
-   git clone https://github.com/Octaviusb/puntos-estilo.git
-   cd puntos-estilo
-   ```
+## 📝 **Contenido para Redes Sociales**
 
-2. **Configurar la base de datos**
-   ```bash
-   # Importar la estructura de la base de datos
-   mysql -u root -p < carpeta/db/mi_proyecto.sql
-   ```
-
-3. **Configurar las credenciales**
-   ```bash
-   # Copiar el archivo de configuración de ejemplo
-   cp carpeta/server/config.example.php carpeta/server/config.php
-   
-   # Editar las credenciales en config.php
-   nano carpeta/server/config.php
-   ```
-
-4. **Configurar el servidor web**
-   - Apuntar el DocumentRoot a la carpeta `carpeta/frontend/`
-   - Asegurar que PHP tenga permisos de escritura en `img/avatars/`
-
-5. **Acceder al sistema**
-   - URL: `http://localhost/`
-   - Usuario admin por defecto: `admin@puntosestilo.com`
-   - Contraseña: `admin123`
-
-## 📁 Estructura del Proyecto
-
+### **Posts para LinkedIn**
 ```
-PuntosEstilo/
-├── carpeta/
-│   ├── frontend/           # Interfaz de usuario
-│   │   ├── css/           # Estilos CSS
-│   │   ├── js/            # JavaScript
-│   │   ├── img/           # Imágenes
-│   │   ├── includes/      # Archivos PHP incluidos
-│   │   └── pages/         # Páginas adicionales
-│   ├── server/            # Lógica del servidor
-│   └── db/                # Archivos de base de datos
-├── tienda/                # Módulo de tienda
-├── includes/              # Archivos compartidos
-└── docs/                  # Documentación
+🚀 ¡Presentamos Puntos Estilo!
+
+Un sistema revolucionario de fidelización que transforma la relación con tus clientes.
+
+✨ Características principales:
+• Acumulación automática de puntos
+• Catálogo personalizable de beneficios
+• Panel administrativo completo
+• Seguridad de nivel bancario
+• Diseño responsive
+
+¿Quieres aumentar la lealtad de tus clientes? 
+¡Puntos Estilo es la solución!
+
+#Fidelizacion #MarketingDigital #Innovacion #Startup
 ```
 
-## 🔧 Configuración
+### **Posts para Instagram**
+```
+🎯 Transforma tu negocio con Puntos Estilo
 
-### Variables de Entorno
-```php
-// carpeta/server/config.php
-$db_host = 'localhost';
-$db_user = 'your_username';
-$db_pass = 'your_password';
-$db_name = 'your_database';
+📱 Sistema de fidelización completo
+💎 Beneficios exclusivos para tus clientes
+📊 Analytics en tiempo real
+🔒 Seguridad garantizada
+
+¡Haz que cada compra cuente! 💪
+
+#PuntosEstilo #Fidelizacion #Marketing #Negocios
 ```
 
-### Configuración de Seguridad
-- Cambiar credenciales por defecto
-- Configurar HTTPS en producción
-- Habilitar firewall
-- Configurar backup automático
+## 📧 **Email Marketing**
 
-## 📊 Base de Datos
+### **Template de Lanzamiento**
+```
+Asunto: 🎉 ¡Puntos Estilo ya está aquí! Revoluciona tu programa de fidelización
 
-### Tablas Principales
-- `usuarios` - Información de usuarios
-- `transacciones` - Historial de puntos
-- `productos` - Catálogo de beneficios
-- `canjes` - Registro de redenciones
-- `retos` - Sistema de desafíos
-- `referidos` - Sistema de referencias
-- `codigos_otp` - Autenticación de dos factores
+Hola [Nombre],
 
-## 🎨 Personalización
+¿Sabías que los clientes que participan en programas de fidelización gastan un 67% más?
 
-### Colores del Tema
-```css
-/* Colores principales */
---primary-color: #2c3e50;    /* Azul oscuro */
---secondary-color: #3498db;  /* Azul claro */
---accent-color: #e74c3c;     /* Rojo */
---success-color: #27ae60;    /* Verde */
---warning-color: #f39c12;    /* Naranja */
+Te presentamos **Puntos Estilo**, el sistema que transformará la relación con tus clientes:
+
+🔥 **Características Destacadas:**
+• Acumulación automática de puntos
+• Catálogo personalizable de beneficios
+• Panel administrativo intuitivo
+• Seguridad de nivel bancario
+• Soporte técnico 24/7
+
+🎯 **Beneficios para tu Negocio:**
+• Aumenta la retención de clientes
+• Incrementa el ticket promedio
+• Obtén datos valiosos de comportamiento
+• Diferenciación competitiva
+
+📞 **Agenda una demo gratuita:**
+[Link de calendario]
+
+¡No te quedes atrás en la revolución de la fidelización!
+
+Saludos,
+El equipo de Puntos Estilo
 ```
 
-### Modificar Estilos
-Los estilos principales se encuentran en:
-- `carpeta/frontend/css/unified-styles.css`
-- `carpeta/frontend/css/styles.css`
+## 🎥 **Guión para Video Promocional**
 
-## 🔐 Seguridad
+### **Video de 60 segundos**
+```
+[0:00-0:10] - Intro con logo y música
+"¿Quieres aumentar la lealtad de tus clientes?"
 
-### Medidas Implementadas
-- ✅ Hashing seguro de contraseñas (password_hash)
-- ✅ Prepared statements para prevenir SQL injection
-- ✅ Validación de entrada en todos los formularios
-- ✅ Sanitización de datos con real_escape_string
-- ✅ Control de sesiones con timeout
-- ✅ Validación de roles y permisos
-- ✅ Sistema OTP para autenticación adicional
+[0:10-0:25] - Problema
+"Los programas de fidelización tradicionales son complejos y costosos"
 
-### Recomendaciones de Producción
-- Cambiar credenciales por defecto
-- Habilitar HTTPS obligatorio
-- Configurar rate limiting
-- Implementar logging de seguridad
-- Realizar auditorías regulares
+[0:25-0:40] - Solución
+"Puntos Estilo simplifica todo. Sistema completo en una plataforma"
 
-## 📈 Reportes y Analytics
+[0:40-0:55] - Beneficios
+"Acumulación automática, catálogo personalizable, analytics en tiempo real"
 
-### Métricas Disponibles
-- Usuarios registrados
-- Puntos totales en el sistema
-- Transacciones realizadas
-- Productos más populares
-- Tasa de conversión
-- Actividad reciente
+[0:55-1:00] - Call to Action
+"¡Comienza hoy! puntosestilo.com"
+```
 
-### Dashboard Administrativo
-- Gráficos en tiempo real
-- Filtros por fecha
-- Exportación de datos
-- Alertas automáticas
+## 📈 **Métricas de Marketing**
 
-## 🤝 Contribución
+### **KPIs a Seguir**
+- **Conversiones de demo** → 15%
+- **Tiempo en página** → 3+ minutos
+- **Tasa de rebote** → <40%
+- **Leads generados** → 100/mes
+- **ROI de marketing** → 300%
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+### **Canales de Distribución**
+- LinkedIn (B2B)
+- Instagram (Branding)
+- YouTube (Tutoriales)
+- Email Marketing (Nurturing)
+- Webinars (Educación)
 
-## 📝 Licencia
+## 🎯 **Audiencias Objetivo**
 
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+### **Primary Target**
+- **Empresas retail** (50-200 empleados)
+- **Restaurantes y cafeterías** (cadenas)
+- **Servicios profesionales** (consultorías)
+- **E-commerce** (venta directa)
 
-## 👨‍💻 Desarrollador
+### **Secondary Target**
+- **Startups** en crecimiento
+- **Empresas familiares** en expansión
+- **Franchises** locales
 
-**Octavio Buitrago** - [@Octaviusb](https://github.com/Octaviusb)
+## 📞 **Contacto para Marketing**
 
-- 📧 Email: obuitragocamelo@yahoo.es
-- 🌍 Ubicación: Villavicencio, Meta, Colombia
-- 💼 LinkedIn: [Octavio Buitrago](https://linkedin.com/in/octavio-buitrago)
-
-## 🙏 Agradecimientos
-
-- Bootstrap por el framework CSS
-- jQuery por la librería JavaScript
-- Font Awesome por los iconos
-- La comunidad PHP por el soporte
-
-## 📞 Soporte
-
-Si tienes alguna pregunta o necesitas ayuda:
-
-- 📧 Email: soporte@puntosestilo.com
-- 📱 Teléfono: +57 555-555-555
-- 🌐 Website: puntosestilo.com (próximamente)
+- **Email**: marketing@puntosestilo.com
+- **Teléfono**: +57 555-555-555
+- **LinkedIn**: linkedin.com/company/puntosestilo
+- **Instagram**: @puntosestilo
 
 ---
-
-⭐ **¡Si te gusta este proyecto, dale una estrella en GitHub!**
-
-**Desarrollado con ❤️ por Octavio Buitrago** 
+*Materiales actualizados: $(date)*
+*Responsable: Equipo de Marketing Puntos Estilo* 
